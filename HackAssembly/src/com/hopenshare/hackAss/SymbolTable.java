@@ -5,8 +5,8 @@ public class SymbolTable {
 	public static void checkTable(String c) {
 		Code bin = new Code();
 		//compare the String 
-		if (c.indexOf("R") != -1) {
-			bin.changeToBinary(c.substring(c.lastIndexOf("R") + 1));
+		if (c.indexOf("ARG") != -1) {
+			bin.print("0000000000000011");
 		}else if(c.indexOf("SCREEN") != -1){
 			//
 			//
@@ -20,8 +20,8 @@ public class SymbolTable {
 			bin.print("0000000000000001");
 		}else if(c.indexOf("LCL") != -1){
 			bin.print("0000000000000010");
-		}else if(c.indexOf("ARG") != -1){
-			bin.print("0000000000000011");
+		}else if(c.indexOf("R") != -1){
+			bin.changeToBinary(c.substring(c.lastIndexOf("R") + 1));
 		}else if(c.indexOf("THIS") != -1){
 			bin.print("0000000000000100");
 		}else{
