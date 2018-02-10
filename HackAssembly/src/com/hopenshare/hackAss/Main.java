@@ -9,6 +9,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		try {
+			//Reading the file
 			Scanner file = extracted().useDelimiter(",\\s*");
 			Parser codeFile = new Parser();
 			codeFile.unpack(file);
