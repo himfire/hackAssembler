@@ -15,7 +15,6 @@ public class Main {
 			codeFile.unpack(file);
 			file.close();
 		} catch (
-
 		FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (NoSuchElementException ef) {
@@ -24,6 +23,6 @@ public class Main {
 	}
 
 	private static Scanner extracted() throws FileNotFoundException {
-		return new Scanner(new File("test.txt"));
+		return new Scanner(new File("MaxL.txt"));
 	}
 }
