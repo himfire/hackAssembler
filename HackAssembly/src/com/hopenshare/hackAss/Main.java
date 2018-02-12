@@ -37,6 +37,6 @@ public class Main {
 	}
 
 	private static Scanner extracted() throws FileNotFoundException {
-		return new Scanner(new File("MaxL.txt"));
+		return new Scanner(new File("PongL.asm"));
 	}
 }
