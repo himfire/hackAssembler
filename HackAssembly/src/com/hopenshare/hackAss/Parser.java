@@ -1,15 +1,15 @@
 package com.hopenshare.hackAss;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Parser {
 
-	public void unpack(Scanner file) {
+	public void unpack(Scanner file) throws IOException {
 		//getting the file line by line
 		int count = 0;
 		String[] content = new String[200];
 		Code bin = new Code();
-		SymbolTable c = new SymbolTable();
 		while (file.hasNext()) {
 			int no = 1;
 			content[++count] = file.nextLine();

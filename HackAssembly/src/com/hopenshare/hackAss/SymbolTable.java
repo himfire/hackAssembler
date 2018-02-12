@@ -1,8 +1,10 @@
 package com.hopenshare.hackAss;
 
+import java.io.IOException;
+
 public class SymbolTable {
 
-	public static void checkTable(String c) {
+	public static void checkTable(String c) throws IOException {
 		Code bin = new Code();
 		//compare the String 
 		if (c.indexOf("ARG") != -1) {
